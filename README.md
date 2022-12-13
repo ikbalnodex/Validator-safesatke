@@ -253,8 +253,12 @@ Create a dedicated user for running the Lighthouse validator client, create a di
 Import your keystore that includes your validator key for the Lighthouse validator client. Running the first command will prompt you for that keystore password. Make sure to enter it correctly and avoid leaving it blank. Make sure to replace `/path/to/keystores` with the actual path to your keystores created [in the previous step](#creating-your-validator-keys-and-performing-the-deposit).
 
 ```console
+mkdir keystores
+```
+
+```console
   sudo /usr/local/bin/lighthouse account validator import \
-    --directory /path/to/keystores \
+    --directory /root/keystores \
     --datadir /var/lib/lighthouse \
     --network prater
   sudo chown -R lighthousevalidator:lighthousevalidator /var/lib/lighthouse/validators
