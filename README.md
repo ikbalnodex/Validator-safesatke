@@ -289,7 +289,7 @@ ExecStart=/usr/local/bin/lighthouse vc \
     --datadir /var/lib/lighthouse \
     --graffiti EthStaker \
     --metrics \
-    --suggested-fee-recipient 0x0000000000000000000000000000000000000000
+    --suggested-fee-recipient 0x0
 
 [Install]
 WantedBy=multi-user.target
